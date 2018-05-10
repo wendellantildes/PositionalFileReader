@@ -1,0 +1,184 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0-preview-20170628-02" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.1.18" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.1.18" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PositionalFileReader\PositionalFileReader.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Files\" />
+    <Folder Include="Models\" />
+    <Folder Include="FileSpecifications\" />
+    <Folder Include="Files\UniformFileReader\" />
+    <Folder Include="Files\MultiformFileReader\" />
+    <Folder Include="Files\UniformDirectoryReader\" />
+    <Folder Include="Files\MultiformDirectoryReader\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="PokeTrainners\002.txt" />
+    <None Remove="Files\MultiformDirectoryReader\000.txt" />
+    <None Remove="Files\MultiformDirectoryReader\001.txt" />
+    <None Remove="Files\MultiformDirectoryReader\003_malformed.txt" />
+    <None Remove="Files\MultiformDirectoryReader\005.txt" />
+    <None Remove="Files\MultiformDirectoryReader\006.txt" />
+    <None Remove="Files\MultiformDirectoryReader\007.txt" />
+    <None Remove="Files\MultiformFileReader\PokeTrainerWithHeaderAndTrailer.txt" />
+    <None Remove="Files\MultiformFileReader\PokeTrainnerWithHeaderAndTrailerWhenHeaderIsMalformed.txt" />
+    <None Remove="Files\MultiformFileReader\PokeTrainerWithHeaderAndTrailerWhenOneTrainerIsMalformed.txt" />
+    <None Remove="Files\UniformDirectoryReader\000.txt" />
+    <None Remove="Files\UniformDirectoryReader\007.txt" />
+    <None Remove="Files\UniformDirectoryReader\006.txt" />
+    <None Remove="Files\UniformDirectoryReader\005.txt" />
+    <None Remove="Files\UniformDirectoryReader\003_malformed.txt" />
+    <None Remove="Files\UniformDirectoryReader\001.txt" />
+    <None Remove="Files\UniformFileReader\CustomConverter.txt" />
+    <None Remove="Files\UniformFileReader\MalFormed.txt" />
+    <None Remove="Files\UniformFileReader\Ok.txt" />
+    <None Remove="Files\UniformFileReader\PokeTrainerWithOptionalValue.txt" />
+    <None Remove="Files\UniformFileReader\PokeTrainerWithDataLengthSmallerThanMaxLineLength.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Files\FileReaderUniform\CustomConverter.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\FileReaderUniform\PokeTrainner_correct.txt">
+      <LogicalName>PositionalFileReader.Test.Files.PokeTrainner_correct.txt</LogicalName>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\FileReaderUniform\PokeTrainnerWithOptional.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\FileReaderUniform\PokeTrainnerWithDataLengthSmallerThanMaxLineLength.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\FileReaderUniform\PokeTrainnerMalFormed.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\FileReaderMultiform\PokeTrainnerWithHeaderAndTrailerWhereOneTrainnerIsMalformed.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\DirectoryReaderUniform\000.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\DirectoryReaderUniform\001.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\DirectoryReaderUniform\003_malformed.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\DirectoryReaderUniform\005.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\DirectoryReaderUniform\006.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\DirectoryReaderUniform\007.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\UniformDirectoryReader\001.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\UniformDirectoryReader\003_malformed.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\UniformDirectoryReader\005.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\UniformDirectoryReader\006.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\UniformDirectoryReader\007.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\UniformFileReader\MalFormed.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\UniformFileReader\Ok.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\UniformFileReader\PokeTrainerWithOptionalValue.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Files\MultiformDirectoryReader\000.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\MultiformDirectoryReader\001.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\MultiformDirectoryReader\003_malformed.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\MultiformDirectoryReader\005.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\MultiformDirectoryReader\006.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\MultiformDirectoryReader\007.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\MultiformFileReader\PokeTrainerWithHeaderAndTrailer.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\MultiformFileReader\PokeTrainerWithHeaderAndTrailerWhenHeaderIsMalformed.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\MultiformFileReader\PokeTrainerWithHeaderAndTrailerWhenOneTrainerIsMalformed.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\UniformDirectoryReader\000.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\UniformDirectoryReader\007.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\UniformDirectoryReader\006.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\UniformDirectoryReader\005.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\UniformDirectoryReader\003_malformed.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\UniformDirectoryReader\001.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\UniformFileReader\CustomConverter.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\UniformFileReader\MalFormed.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\UniformFileReader\Ok.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\UniformFileReader\PokeTrainerWithOptionalValue.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\UniformFileReader\PokeTrainerWithDataLengthSmallerThanMaxLineLength.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Utils\FileUtils.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="Utils\FileUtils.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+</Project>

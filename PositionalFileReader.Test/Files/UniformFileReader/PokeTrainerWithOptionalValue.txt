@@ -1,0 +1,7 @@
+﻿001Ash Ketchum     20171120
+002Brock           20171121
+003Red             20171121This is the best of the best.
+004May             20180102
+005Max             20180203
+006Dawn            20180202
+007Misty           20170325
