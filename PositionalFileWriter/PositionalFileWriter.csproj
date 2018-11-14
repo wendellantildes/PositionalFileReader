@@ -5,6 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Kernel\Kernel.csproj" />
   </ItemGroup>
 </Project>

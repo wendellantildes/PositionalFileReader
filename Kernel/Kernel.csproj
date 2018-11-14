@@ -4,7 +4,4 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Kernel\Kernel.csproj" />
-  </ItemGroup>
 </Project>

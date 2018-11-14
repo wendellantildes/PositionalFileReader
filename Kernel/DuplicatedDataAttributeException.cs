@@ -1,5 +1,5 @@
 ﻿using System;
-namespace PositionalFileReader
+namespace Kernel
 {
     public class DuplicatedDataAttributeException : Exception
     {

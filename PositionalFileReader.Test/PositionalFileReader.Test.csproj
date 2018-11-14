@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PositionalFileReader\PositionalFileReader.csproj" />
+    <ProjectReference Include="..\Kernel\Kernel.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Files\" />

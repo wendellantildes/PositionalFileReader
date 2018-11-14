@@ -1,5 +1,5 @@
 ﻿using System;
-namespace PositionalFileReader
+namespace Kernel
 {
     [AttributeUsage(AttributeTargets.Property,
                 AllowMultiple = false,
@@ -11,6 +11,7 @@ namespace PositionalFileReader
         public Type DataType { get; set; } = typeof(string);
         public bool Optional { get; set; } = false;
         public string CustomConverterMethod { get; set; } = null;
-
+        public string CustomUndoMethod { get; set; } = null;
+        public char LeftPadding { get; set; } = '\0';
     }
 }

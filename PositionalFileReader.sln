@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PositionalFileReader", "Pos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PositionalFileReader.Test", "PositionalFileReader.Test\PositionalFileReader.Test.csproj", "{C517C047-AE11-4054-98C1-ACEF067FFEB6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PositionalFileWriter", "PositionalFileWriter\PositionalFileWriter.csproj", "{8224E315-A4C4-456B-9022-825A5D935B16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kernel", "Kernel\Kernel.csproj", "{321F3401-044E-4931-8E40-EDA04B1DB08E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +29,13 @@ Global
 		{C517C047-AE11-4054-98C1-ACEF067FFEB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C517C047-AE11-4054-98C1-ACEF067FFEB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C517C047-AE11-4054-98C1-ACEF067FFEB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8224E315-A4C4-456B-9022-825A5D935B16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8224E315-A4C4-456B-9022-825A5D935B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8224E315-A4C4-456B-9022-825A5D935B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8224E315-A4C4-456B-9022-825A5D935B16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{321F3401-044E-4931-8E40-EDA04B1DB08E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{321F3401-044E-4931-8E40-EDA04B1DB08E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{321F3401-044E-4931-8E40-EDA04B1DB08E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{321F3401-044E-4931-8E40-EDA04B1DB08E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

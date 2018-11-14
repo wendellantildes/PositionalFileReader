@@ -1,5 +1,5 @@
 ﻿using System;
-namespace PositionalFileReader
+namespace Kernel
 {
     public class LineSpecificationAttribute : Attribute
     {
@@ -22,7 +22,12 @@ namespace PositionalFileReader
         /// <value><c>true</c> if has more than one; otherwise, <c>false</c>.</value>
         public bool HasMoreThanOne { get; set; } = false;
 
-
+        /// <summary>
+        /// Indicate the order this line must be in a serialization. If this line is used 
+        /// for serialization, the values can not be repeated.
+        /// </summary>
+        /// <value>The serialization order.</value>
+        public int SerializationOrder { get; set; } = 0;
 
     }
 }

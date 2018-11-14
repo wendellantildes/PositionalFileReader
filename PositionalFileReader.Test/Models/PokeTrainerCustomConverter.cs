@@ -1,4 +1,6 @@
 ﻿using System;
+using Kernel;
+
 namespace PositionalFileReader.Test.Models
 {
     public class PokeTrainerCustomConverter

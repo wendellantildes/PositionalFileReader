@@ -4,6 +4,7 @@ using System;
 using PositionalFileReader.Test.Models;
 using System.IO;
 using PositionalFileReader.Test.Utils;
+using Kernel;
 
 namespace PositionalFileReader.Test
 {

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using Kernel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PositionalFileReader.Test.FileSpecifications;
 using PositionalFileReader.Test.Utils;
